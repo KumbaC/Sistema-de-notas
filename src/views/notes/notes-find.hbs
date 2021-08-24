@@ -1,0 +1,42 @@
+<br>
+<div class="row">
+
+{{#each nodes}}
+
+<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+
+    <p class="card-text">{{description}}</p>
+    <!-- BOTON PARA IR A LA VISTA EDITAR -->
+   <a href="/notes/edit/{{_id}}" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
+
+       <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+         <input type="hidden"  name="_method" value="delete">
+         <button type="submit" class="btn btn-danger"><i class="fas fa-ban"></i></button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+   {{else}}
+<div class="card mx-auto">
+<div class="card-body">
+<h1 class="text-center">Hello {{user.name}}</h1>
+<p class="lead">¡Aún no tienes ninguna nota!</p>
+<a href="/notes/add" class="btn btn-primary btn-block">Agrega una nueva nota</a>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+{{/each}}
+ </div>
+

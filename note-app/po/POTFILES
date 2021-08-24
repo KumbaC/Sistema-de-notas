@@ -1,0 +1,5 @@
+data/org.gnome.Note-App.desktop.in
+data/org.gnome.Note-App.appdata.xml.in
+data/org.gnome.Note-App.gschema.xml
+src/window.uisrc/main.js
+src/window.js

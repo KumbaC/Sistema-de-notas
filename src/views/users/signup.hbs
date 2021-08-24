@@ -1,0 +1,34 @@
+<h1 class="text-white text-center">Registro</h1>
+
+<form method="post" action="/users/signup">
+<div class="col-md-6 mx-auto">
+<div class="card">
+  <div class="card-body">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre</label>
+      <input type="text" name="name" class="form-control" value="{{name}}" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+    <label for="inputAddress">Email</label>
+    <input type="email" name="email" class="form-control" value="{{email}}" id="inputAddress" placeholder="Introduzca su correo electronico">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-6">
+        <label for="inputPassword4">Contraseña</label>
+      <input type="password" name="password" class="form-control" value="{{password}}" id="inputPassword4">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputPassword4">Confirmar Contraseña</label>
+     <input type="password" name="confirm_password" class="form-control" value="{{confirm_password}}" id="inputPassword4">
+  </div>
+
+     </div>
+ 
+  <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
+
+      </div>
+    </div> 
+  </div>
+</form>

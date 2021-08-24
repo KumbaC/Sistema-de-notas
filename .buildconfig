@@ -1,0 +1,9 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/osti/.cache/gnome-builder/install/note-app/host
+app-id=
+postbuild=
+prebuild=

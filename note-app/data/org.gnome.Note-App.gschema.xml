@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="note-app">
+	<schema id="org.gnome.Note-App" path="/org/gnome/Note-App/">
+	</schema>
+</schemalist>
